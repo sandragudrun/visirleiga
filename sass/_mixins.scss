@@ -1,0 +1,46 @@
+@mixin fonts {
+    line-height: 1.5rem;
+    font-family: $main-font;
+}
+
+@mixin mobile-margin {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin carousel-background {
+    padding: 8px 0 16px;
+    margin: 8px 0 ;
+    width: 100%;
+    .carousel-title-custom {
+        @include mobile-margin;
+    }
+}
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }

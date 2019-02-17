@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vísir - Leiga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <header>
+        <img src="img/visir-logo-white.svg" alt="Vísir logo">
+    </header>
+    <section class="image-banner">
+        <div class="blue-trans-background">
+            <div class="logotext">
+                <img src="img/visir-logo-white.svg" alt="Vísir logo">
+                <h1>- Leiga</h1><br/>
+            </div>
+            <h2>Við hjálpum þér að finna rétta húsnæðið</h2>
+        </div>
+    </section>
+    <section class="button-banner">
+        <button class="custom-buttons">Skrá eign</button>
+        <button class="custom-buttons">Innskráning</button>
+    </section>
+    <section class="greybackground">
+        <form action="">
+            <div class="checkbox-title">
+                <h2>Svæði</h2>
+                <div class="checkbox-divs">
+                    <input type="checkbox" /> Allt landið <br />
+                    <input type="checkbox" /> Höfuðborgarsvæðið <br />
+                    <input type="checkbox" /> Reykjavík <br />
+                    <input type="checkbox" /> 101 Reykjavík <br />
+                    <input type="checkbox" /> 103 Reykjavík <br />
+                    <input type="checkbox" /> 104 Reykjavík <br />
+                    <input type="checkbox" /> 105 Reykjavík <br />
+                    <input type="checkbox" /> 107 Reykjavík <br />
+                    <input type="checkbox" /> 108 Reykjavík <br />
+                    <input type="checkbox" /> 109 Reykjavík <br />
+                    <input type="checkbox" /> 110 Reykjavík <br />
+                    <input type="checkbox" /> 111 Reykjavík <br />
+                    <input type="checkbox" /> 112 Reykjavík <br />
+                    <input type="checkbox" /> 113 Reykjavík <br />
+                    <input type="checkbox" /> 116 Reykjavík <br />
+                    <input type="checkbox" /> Kópavogur <br />
+                    <input type="checkbox" /> 200 Kópavogur <br />
+                    <input type="checkbox" /> 201 Kópavogur <br />
+                    <input type="checkbox" /> 202 Kópavogur <br />
+                    <input type="checkbox" /> 203 Kópavogur <br />
+                </div>
+            </div> <!-- svæðis div endar-->
+            <div class="checkbox-title">
+                <h2>Tegund húsnæðis</h2>
+                <div class="checkbox-divs">
+                    <input type="checkbox" /> Allar tegundir <br />
+                    <input type="checkbox" /> Íbúðarhúsnæði <br />
+                    <input type="checkbox" /> Einbýlishús <br />
+                    <input type="checkbox" /> Fjölbýlishús <br />
+                    <input type="checkbox" /> Hæðir <br />
+                    <input type="checkbox" /> Parhús <br />
+                    <input type="checkbox" /> Raðhús <br />
+                    <input type="checkbox" /> Herbergi <br />
+                    <input type="checkbox" /> Stúdíó <br />
+                    <input type="checkbox" /> Atvinnuhúsnæði <br />
+                    <input type="checkbox" /> Skrifstofuhúsnæði <br />
+                    <input type="checkbox" /> Verslunarhúsnæði <br />
+                    <input type="checkbox" /> Lagerhúsnæði <br />
+                    <input type="checkbox" /> Iðnaðarhúsnæði <br />
+                    <input type="checkbox" /> Ótilgreint <br />
+                </div>
+            </div> <!-- tegund húsnæðis div endar -->
+            <div class="container dropdown-container"> 
+                <div class="row">
+                    <div class="col-3">
+                        <label for="verd">Verð</label>
+                    </div>
+                    <div class="col-9">
+                        <select name="verd" id="verd" class="dropdown-list">
+                            <option value="ollverd">Velja allt</option>
+                            <option value="-150.000">undir 150.000 kr.</option>
+                            <option value="150.000 - 200.000">150.000 - 200.000 kr.</option>
+                            <option value="200.000-250.000">200.000-250.000 kr.</option>
+                            <option value="250.000-300.000">250.000-300.000 kr.</option>
+                            <option value="+300.000">yfir 300.000 kr.</option>
+                        </select>
+                    </div>
+                </div> <!--row ends-->
+                <div class="row">
+                    <div class="col-3">
+                        <label for="staerd">Stærð</label>
+                    </div>
+                    <div class="col-9">
+                        <select name="staerd" id="staerd" class="dropdown-list">
+                            <option value="allarsteardir">Velja allt</option>
+                            <option value="-50">undir 50&sup2;</option>
+                            <option value="50-100">50m&sup2;-100m&sup2;</option>
+                            <option value="100-150">100m&sup2;-150m&sup2;</option>
+                            <option value="150-200">150m&sup2;-200m&sup2;</option>
+                            <option value="+200;">yfir 200m&sup2;</option>
+                        </select>
+                    </div>
+                </div> <!--row ends-->
+                <div class="row">
+                    <div class="col-3">
+                        <label for="herbergi">Herbergi</label>
+                    </div>
+                    <div class="col-9">
+                        <select name="herbergi" id="herbergi" class="dropdown-list">
+                            <option value="ollherbergi">Velja allt</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5 eða fleiri</option>
+                        </select>
+                    </div>
+                </div> <!--row ends-->
+                <div class="row">
+                    <div class="col-3">
+                        <label for="leigutimi">Leigutími</label>
+                    </div>
+                    <div class="col-9">
+                        <select name="leigutimi" id="leigutimi" class="dropdown-list">
+                            <option value="0-6">0-6 mánuðir</option>
+                            <option value="6-12">6-12 mánuðir</option>
+                            <option value="12+">ár eða meira</option>
+                        </select>
+                    </div>  
+                </div> <!--row ends-->
+                <div class="laus-ny-checkbox">
+                    <label for="laus">Laus strax</label>
+                    <input type="checkbox" name="laus" value="laus"><br/>
+                </div>
+                <div class="laus-ny-checkbox">
+                    <label for="laus">Nýskráð í vikunni</label>
+                    <input type="checkbox" name="nyskrad" value="nyskrad"><br/>
+                </div>  
+            </div><!--container ends-->
+            <div class="container dropdown-container">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="gotuheiti">Götuheiti</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="gotuheiti" id="gotuheiti" class="text-input">
+                    </div>
+                    <div class="col-3">
+                        <label for="textaleit">Textaleit</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="textaleit" id="textaleit" class="text-input">
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="Leita" class="custom-buttons small-button">
+                    </div>
+                    <div class="col-12">
+                        <input type="reset" value="Hreinsa x" class="hidden-input">
+                    </div> 
+                </div>
+            </div>      
+        </form> 
+    </section> <!--form section ends--> 
+    <section>
+        <div class="nyjustu-eignir-background">
+            <h2 class="carousel-title-custom">Nýjustu eignirnar</h2>
+            <div id="apartment-carousel">
+                <div class="slide">
+                    <div class="card">
+                        <div class="img-div">
+                            <img src="img/1045261.jpg" alt="nesvegur 16">
+                            <div class="card-address">
+                                <h1>Nesvegur 16</h1>
+                                <h2>107 Reykjavík</h2>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Þriggja herbergja íbúð til leigu á fallegum stað í vesturbænun. Stutt í skóla, leikskóla..</p>
+                        </div>
+                        <div class="bottom-card-div">
+                            <div>
+                                <h3>35m&sup2;</h3>
+                                <h3>3 herbergi</h3>
+                            </div>
+                            <div class="price-button">
+                                <h4>380.000</h4>
+                            </div>
+                        </div><!--bottom-Card-div ends-->
+                    </div> <!--Card div ends-->
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="img-div">
+                            <img src="img/1045261.jpg" alt="nesvegur 16">
+                            <div class="card-address">
+                                <h1>Nesvegur 16</h1>
+                                <h2>107 Reykjavík</h2>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Þriggja herbergja íbúð til leigu á fallegum stað í vesturbænun. Stutt í skóla, leikskóla..</p>
+                        </div>
+                        <div class="bottom-card-div">
+                            <div>
+                                <h3>35m&sup2;</h3>
+                                <h3>3 herbergi</h3>
+                            </div>
+                            <div class="price-button">
+                                <h4>380.000</h4>
+                            </div>
+                        </div><!--bottom-Card-div ends-->
+                    </div> <!--Card div ends-->
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="img-div">
+                            <img src="img/1045261.jpg" alt="nesvegur 16">
+                            <div class="card-address">
+                                <h1>Nesvegur 16</h1>
+                                <h2>107 Reykjavík</h2>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Þriggja herbergja íbúð til leigu á fallegum stað í vesturbænun. Stutt í skóla, leikskóla..</p>
+                        </div>
+                        <div class="bottom-card-div">
+                            <div>
+                                <h3>35m&sup2;</h3>
+                                <h3>3 herbergi</h3>
+                            </div>
+                            <div class="price-button">
+                                <h4>380.000</h4>
+                            </div>
+                        </div><!--bottom-Card-div ends-->
+                    </div> <!--Card div ends-->
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="img-div">
+                            <img src="img/1045261.jpg" alt="nesvegur 16">
+                            <div class="card-address">
+                                <h1>Nesvegur 16</h1>
+                                <h2>107 Reykjavík</h2>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Þriggja herbergja íbúð til leigu á fallegum stað í vesturbænun. Stutt í skóla, leikskóla..</p>
+                        </div>
+                        <div class="bottom-card-div">
+                            <div>
+                                <h3>35m&sup2;</h3>
+                                <h3>3 herbergi</h3>
+                            </div>
+                            <div class="price-button">
+                                <h4>380.000</h4>
+                            </div>
+                        </div><!--bottom-Card-div ends-->
+                    </div> <!--Card div ends-->
+                </div>
+            </div>
+        </div><!--Greyback div ends-->
+        <div class="mest-skodad-background">
+            <h2 class="carousel-title">Mest skoðað</h2>
+            <div class="card">
+                <div class="img-div">
+                    <img src="img/1045261.jpg" alt="nesvegur 16">
+                    <div class="card-address">
+                        <h1>Nesvegur 16</h1>
+                        <h2>107 Reykjavík</h2>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Þriggja herbergja íbúð til leigu á fallegum stað í vesturbænun. Stutt í skóla, leikskóla..</p>
+                </div>
+                <div class="bottom-card-div">
+                    <div>
+                        <h3>35m&sup2;</h3>
+                        <h3>3 herbergi</h3>
+                    </div>
+                    <div class="price-button">
+                        <h4>380.000</h4>
+                    </div>
+                </div><!--bottom-Card-div ends-->
+                </div> <!--Card div ends-->
+        </div><!--whiteback div ends-->
+    </section><!--card section ends-->
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <p>SÝN</p>
+                <p>Suðurlandsbraut 8</p>
+                <p>108 Reykjavík</p>      
+                <p>Sími 599 9000</p>
+            </div>
+            <div>
+                <p>Vísir</p>
+                <p>512-5200</p>
+                <p>Auglýsingar</p>
+                <p>Hafðu samband</p>
+            </div>
+       </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

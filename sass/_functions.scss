@@ -1,0 +1,3 @@
+@function calculate-size-ratio($size, $rationumerator, $ratiodenominator){
+    @return $size * ($rationumerator/  $ratiodenominator)
+  }

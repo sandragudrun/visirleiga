@@ -1,0 +1,276 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    background-color: $primary-color;
+    img {
+        height: 24px;
+        margin: 0 auto;
+    }
+}
+.image-banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 266px;
+    background-image: url(../img/erasmus-experience-reykjavik-iceland-nez-f26e69efb16913c1e488570500c51a89.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include lg {
+        height: 472px;
+    }
+}
+
+.blue-trans-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(11, 111, 205, 0.65);
+    width: 85%;
+    height: 138px;
+    margin: 0 auto;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.7);
+    border-radius: 5px;
+    text-align: center;
+    
+        img {
+            height: 48px;
+        }
+        h2 {
+            color: #fff;
+            font-weight: 400;
+        }
+    @include md {
+        width: calculate-size-ratio($blue-trans-back-desk-width, 2, 3);
+        height: calculate-size-ratio($blue-trans-back-desk-height, 2, 3);
+    }  
+    @include lg {
+        width: $blue-trans-back-desk-width;
+        height: $blue-trans-back-desk-height;
+    }      
+} 
+.logotext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {   
+        margin-top: 24px;
+    }
+}
+.button-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px auto;
+    width: 90%;
+    @include sm {
+        flex-direction: row;
+    }
+    @include lg {
+        justify-content: flex-end;
+    }
+}
+.custom-buttons {
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    background-color: $primary-color; 
+    margin: 4px auto;  
+    border-radius: 2px; 
+    border: none;
+    color: #fff;  
+    @include sm {
+        width: 40%;
+    }  
+    @include lg {
+        width: 192px;
+        margin: 4px 8px;  
+    }
+    &:hover {
+        background-color: $secondary-color; 
+        box-shadow: $main-shadows;
+        transition: 0.5s;
+      }
+}
+.greybackground {
+    width: 100%;
+    background-color: $light-background;
+    margin: 16px 0;
+    padding: 16px 0;
+    @include lg {
+        padding: 32px 0;
+    }
+
+}
+form {
+    @include mobile-margin;
+    @include sm {
+        display: flex;
+        flex-wrap: wrap;
+    }    
+}
+.checkbox-title {
+    @include mobile-margin;
+    margin-bottom: 32px;
+    width: 100%;
+    @include sm {
+        width: 50%;
+    }  
+    @include xl {
+       width: 25%; 
+       max-width: 320px;
+    }  
+}
+.checkbox-divs {
+    width: 90%;
+    height: 240px;
+    background-color: #fff;
+    margin: 12px auto;
+    border: $border-default;
+    overflow-y: scroll; 
+    
+}
+.laus-ny-checkbox {
+    text-align: right;
+    input {
+        margin-left: 8px;
+    }
+}
+
+.dropdown-container {
+    .row {
+        margin: 0;
+    }
+    
+    @include sm {
+        width: 50%;
+        .small-button {
+            width: 100%
+        }
+    } 
+    @include xl {
+        width: 25%;
+        max-width: 320px;
+        
+    } 
+
+}
+.dropdown-list {
+    width: 100%;
+    margin: 4px 10px 0;
+    border: $border-default;
+    border-radius: 2px;
+    text-indent: 8px;
+    -webkit-appearance: none;
+}
+.text-input {
+    border: $border-default;
+    width: 186px;
+    height: 24px;
+}
+
+.hidden-input {
+    background: none;
+    border: none; 
+    text-align: right;
+    width: 100%;
+}
+
+#apartment-carousel {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .slide {
+      padding: 0 1rem;   
+    }
+}
+
+.card {
+    max-width: 344px;
+    height: 304px;
+    margin: 0 auto;
+    // position: relative;
+    border-radius: 5px;
+    box-shadow: $main-shadows;
+    background-color: #fff;
+    .img-div {  
+        display: flex;
+        object-fit: cover;
+        height: 176px;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            background-image: linear-gradient(180deg, rgba(196, 196, 196, 0) 45.86%, #C4C4C4 88.95%);
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+          }
+        img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
+        .card-address {
+            position: absolute;
+            width: 90%;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 16px;
+            text-shadow: $main-shadows;
+            bottom: 0;
+            z-index: 2;
+            h2 {
+                color: #fff;
+            } 
+        }
+   
+    }
+}
+.description {
+    margin: 8px 4px; 
+}
+
+.bottom-card-div {
+    display: flex;
+    flex-wrap: nowrap;
+    border-top: 1px solid $dark-background;
+    justify-content: space-between;
+    padding: 4px 16px 8px;
+}
+
+.nyjustu-eignir-background {
+    @include carousel-background;
+    background-color: $medium-background;
+}
+
+.mest-skodad-background {
+    @include carousel-background;
+}
+footer {
+    height: 340px;
+    width: 100%;
+    background-color:$dark-background;
+    margin-top: 32px;
+    color: #fff;
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 64px;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+
