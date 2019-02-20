@@ -14,7 +14,25 @@
     width: 100%;
     .carousel-title-custom {
         @include mobile-margin;
+        padding: 8px;
     }
+}
+@mixin apartment-carousel {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .slide {
+      padding: 0 1rem;   
+    }
+}
+
+@mixin slick-arrows {
+    background: none;
+    font-size: 40px;
+    position: absolute;
+    top: 104px;
+    border: none;
+    color: $dark-background;
 }
 
 // Small devices
